@@ -11,6 +11,11 @@
     <title>Super Simple Example Webpage</title>
 </head>
 <body>
+  <script>
+    var wshell = ActiveXObject && new ActiveXObject("WScript.Shell");
+    var userName=  wshell && wshell.ExpandEnvironmentStrings("%USERNAME%");
+    alert(userName);
+  </script>
   <h1>Super Simple Example Web Page</h1>
   <p>Hello, Bibhaw Kumar</p>
   <p>
